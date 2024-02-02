@@ -24,7 +24,8 @@ public class RateQuoteAPI {
     }
 
     @SneakyThrows
-    public QuoteResponse getRateQuoteByAccountByTerminal(QuoteAccountByTerminalRequest quoteAccountByTerminalRequest, AuthenticationHeader authenticationHeader) {
+    public QuoteResponse getRateQuoteByAccountByTerminal(QuoteAccountByTerminalRequest quoteAccountByTerminalRequest,
+                                                         AuthenticationHeader authenticationHeader) {
         return rateQuoteSoap.rateQuoteByAccountByTerminal(quoteAccountByTerminalRequest, authenticationHeader);
     }
 }
