@@ -20,45 +20,66 @@ public interface RateQuoteSoap {
     /**
      * This method sends back a rate quote from the Road Runner Transportation Services System
      */
-    @WebMethod(operationName = "RateQuote", action = "https://webservices.rrts.com/ratequote/RateQuote")
-    @RequestWrapper(localName = "RateQuote", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuote")
-    @ResponseWrapper(localName = "RateQuoteResponse", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuoteResponse")
     @WebResult(name = "RateQuoteResult", targetNamespace = "https://webservices.rrts.com/ratequote/")
+    @WebMethod(operationName = "RateQuote", action = "https://webservices.rrts.com/ratequote/RateQuote")
+    @RequestWrapper(localName = "RateQuote",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuote")
+    @ResponseWrapper(localName = "RateQuoteResponse",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuoteResponse")
     public QuoteResponse rateQuote(
 
-        @WebParam(name = "request", targetNamespace = "https://webservices.rrts.com/ratequote/")
+        @WebParam(name = "request",
+            targetNamespace = "https://webservices.rrts.com/ratequote/")
             QuoteRequest request,
-        @WebParam(name = "AuthenticationHeader", targetNamespace = "https://webservices.rrts.com/ratequote/", header = true)
+        @WebParam(name = "AuthenticationHeader",
+            targetNamespace = "https://webservices.rrts.com/ratequote/",
+            header = true)
             AuthenticationHeader authenticationHeader
     );
 
     /**
      * This method sends back a rate quote from the Road Runner Transportation Services System
      */
-    @WebMethod(operationName = "RateQuoteByAccount", action = "https://webservices.rrts.com/ratequote/RateQuoteByAccount")
-    @RequestWrapper(localName = "RateQuoteByAccount", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccount")
-    @ResponseWrapper(localName = "RateQuoteByAccountResponse", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountResponse")
     @WebResult(name = "RateQuoteByAccountResult", targetNamespace = "https://webservices.rrts.com/ratequote/")
+    @WebMethod(operationName = "RateQuoteByAccount", action = "https://webservices.rrts.com/ratequote/RateQuoteByAccount")
+    @RequestWrapper(localName = "RateQuoteByAccount",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccount")
+    @ResponseWrapper(localName = "RateQuoteByAccountResponse",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountResponse")
     public QuoteResponse rateQuoteByAccount(
 
-        @WebParam(name = "request", targetNamespace = "https://webservices.rrts.com/ratequote/")
+        @WebParam(name = "request",
+            targetNamespace = "https://webservices.rrts.com/ratequote/")
             QuoteAccountRequest request,
-        @WebParam(name = "AuthenticationHeader", targetNamespace = "https://webservices.rrts.com/ratequote/", header = true)
+        @WebParam(name = "AuthenticationHeader",
+            targetNamespace = "https://webservices.rrts.com/ratequote/",
+            header = true)
             AuthenticationHeader authenticationHeader
     );
 
     /**
      * This method sends back a rate quote from the Road Runner Transportation Services System
      */
-    @WebMethod(operationName = "RateQuoteByAccountByTerminal", action = "https://webservices.rrts.com/ratequote/RateQuoteByAccountByTerminal")
-    @RequestWrapper(localName = "RateQuoteByAccountByTerminal", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountByTerminal")
-    @ResponseWrapper(localName = "RateQuoteByAccountByTerminalResponse", targetNamespace = "https://webservices.rrts.com/ratequote/", className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountByTerminalResponse")
     @WebResult(name = "RateQuoteByAccountByTerminalResult", targetNamespace = "https://webservices.rrts.com/ratequote/")
+    @WebMethod(operationName = "RateQuoteByAccountByTerminal", action = "https://webservices.rrts.com/ratequote/RateQuoteByAccountByTerminal")
+    @RequestWrapper(localName = "RateQuoteByAccountByTerminal",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountByTerminal")
+    @ResponseWrapper(localName = "RateQuoteByAccountByTerminalResponse",
+        targetNamespace = "https://webservices.rrts.com/ratequote/",
+        className = "io.github.dftrakesh.roadrunner.models.RateQuoteByAccountByTerminalResponse")
     public QuoteResponse rateQuoteByAccountByTerminal(
 
-        @WebParam(name = "request", targetNamespace = "https://webservices.rrts.com/ratequote/")
+        @WebParam(name = "request",
+            targetNamespace = "https://webservices.rrts.com/ratequote/")
             QuoteAccountByTerminalRequest request,
-        @WebParam(name = "AuthenticationHeader", targetNamespace = "https://webservices.rrts.com/ratequote/", header = true)
+        @WebParam(name = "AuthenticationHeader",
+            targetNamespace = "https://webservices.rrts.com/ratequote/",
+            header = true)
             AuthenticationHeader authenticationHeader
     );
 }
