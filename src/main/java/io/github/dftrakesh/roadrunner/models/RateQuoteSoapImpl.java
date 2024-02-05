@@ -59,5 +59,4 @@ public class RateQuoteSoapImpl implements RateQuoteSoap {
         QuoteResponse _return = null;
         return _return;
     }
-
 }
