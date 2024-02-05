@@ -1,4 +1,4 @@
-package io.github.dftrakesh.roadrunner.models;
+package io.github.dftrakesh.roadrunner;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -56,7 +56,7 @@ public class RateQuote_Service extends Service {
     }
 
     @WebEndpoint(name = "RateQuoteSoap12")
-    public RateQuoteSoap getRateQuoteSoap12() {
+    public io.github.dftrakesh.roadrunner.RateQuoteSoap getRateQuoteSoap12() {
         return super.getPort(RateQuoteSoap12, RateQuoteSoap.class);
     }
 

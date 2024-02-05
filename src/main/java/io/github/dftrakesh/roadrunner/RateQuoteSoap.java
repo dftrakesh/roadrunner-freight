@@ -1,15 +1,19 @@
-package io.github.dftrakesh.roadrunner.models;
+package io.github.dftrakesh.roadrunner;
+
+import io.github.dftrakesh.roadrunner.models.AuthenticationHeader;
+import io.github.dftrakesh.roadrunner.models.QuoteAccountByTerminalRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteAccountRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteResponse;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
 @WebService(targetNamespace = "https://webservices.rrts.com/ratequote/", name = "RateQuoteSoap")
-@XmlSeeAlso({ObjectFactory.class})
 public interface RateQuoteSoap {
 
     @WebResult(name = "RateQuoteResult", targetNamespace = "https://webservices.rrts.com/ratequote/")

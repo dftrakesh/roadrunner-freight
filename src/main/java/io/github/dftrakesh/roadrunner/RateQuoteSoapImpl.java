@@ -1,7 +1,11 @@
-package io.github.dftrakesh.roadrunner.models;
+package io.github.dftrakesh.roadrunner;
 
+import io.github.dftrakesh.roadrunner.models.AuthenticationHeader;
+import io.github.dftrakesh.roadrunner.models.QuoteAccountByTerminalRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteAccountRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteRequest;
+import io.github.dftrakesh.roadrunner.models.QuoteResponse;
 import lombok.SneakyThrows;
-import org.springframework.stereotype.Service;
 
 import javax.jws.WebService;
 
@@ -10,9 +14,8 @@ import javax.jws.WebService;
     portName = "RateQuoteSoap",
     targetNamespace = "https://webservices.rrts.com/ratequote/",
     wsdlLocation = "https://webservices.rrts.com/rating/ratequote.asmx?wsdl",
-    endpointInterface = "io.github.dftrakesh.roadrunner.models.RateQuoteSoap")
+    endpointInterface = "io.github.dftrakesh.roadrunner.RateQuoteSoap")
 
-@Service
 public class RateQuoteSoapImpl implements RateQuoteSoap {
 
     @SneakyThrows
